@@ -49,8 +49,82 @@
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignupModal">SignUp</button>
+            </div>
         </div>
     </nav>
+
+    <!--Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to iCoder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Sign Up Modal -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="SignupModalLabel">Get an iCoder Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="bd-example">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -107,16 +181,15 @@
                 <div
                     class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">World</strong>
-                        <h3 class="mb-0">Featured post</h3>
+                        <strong class="d-inline-block mb-2 text-primary">Python</strong>
+                        <h3 class="mb-0">Learn Python</h3>
                         <div class="mb-1 text-muted">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="https://source.unsplash.com/250x250/?coding,gadgets" alt="" class="bd-placeholder-img"
-                            width="200" height="250">
+                        <img src="img/home1.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
                     </div>
                 </div>
             </div>
@@ -124,16 +197,15 @@
                 <div
                     class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-success">Design</strong>
-                        <h3 class="mb-0">Post title</h3>
+                        <strong class="d-inline-block mb-2 text-danger">Frontend</strong>
+                        <h3 class="mb-0">Bootstrap Templates</h3>
                         <div class="mb-1 text-muted">Nov 11</div>
                         <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
                             additional content.</p>
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="https://source.unsplash.com/250x250/?laptop,gadgets" alt="" class="bd-placeholder-img"
-                            width="200" height="250">
+                        <img src="img/home2.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
                     </div>
                 </div>
             </div>
@@ -143,16 +215,15 @@
                 <div
                     class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">World</strong>
-                        <h3 class="mb-0">Featured post</h3>
+                        <strong class="d-inline-block mb-2 text-warning">World</strong>
+                        <h3 class="mb-0">Global Conferences</h3>
                         <div class="mb-1 text-muted">Nov 12</div>
                         <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
                             lead-in to additional content.</p>
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="https://source.unsplash.com/250x250/?watch,gadgets" alt="" class="bd-placeholder-img"
-                            width="200" height="250">
+                        <img src="img/home3.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
                     </div>
                 </div>
             </div>
@@ -161,15 +232,14 @@
                     class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-success">Design</strong>
-                        <h3 class="mb-0">Post title</h3>
+                        <h3 class="mb-0">Learn Designing</h3>
                         <div class="mb-1 text-muted">Nov 11</div>
                         <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
                             additional content.</p>
                         <a href="#" class="stretched-link">Continue reading</a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img src="https://source.unsplash.com/250x250/?mobile,gadgets" alt="" class="bd-placeholder-img"
-                            width="200" height="250">
+                        <img src="img/home4.jpeg" alt="" class="bd-placeholder-img" width="200" height="250">
                     </div>
                 </div>
             </div>
